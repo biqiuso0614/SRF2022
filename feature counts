@@ -1,0 +1,5 @@
+#生成fcpro.sh文件，单末端测序
+featureCounts -a /home/srf2022/dataprocess/genomic.gtf -o /home/srf2022/dataprocess/featurecountsdata/ERR4590231.txt -T 10 -t CDS -g gene_id /home/srf2022/dataprocess/bamfile/ERR4590231.bam 
+双末端测序
+featureCounts -p -a /home/srf2022/dataprocess/genomic.gtf -o /home/srf2022/dataprocess/featurecountsdata/SRR1027616.txt -T 10 -t CDS -g gene_id /home/srf2022/dataprocess/bamfile/SRR1027616.bam 
+nohup bash fcpro.sh &
